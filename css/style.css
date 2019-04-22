@@ -1,0 +1,143 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+.box{
+  position:relative;
+  top:100px;
+  left:100px;
+  width:50px;
+  height:50px;
+  background:#183;
+  animation-name: boxmove;
+  animation-delay:1s;
+  animation-duration:4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.g2{
+  position:relative;
+  top:300px;
+  left:200px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background:#f65;
+  animation-name: boxmove2;
+  animation-delay:0.5s;
+  animation-duration:4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.g3{
+  position:relative;
+  top:100px;
+  left:900px;
+  width: 0;
+  height: 0;
+  background: transparent;
+  border-bottom:100px solid #DDA0DD;
+  border-left:50px solid transparent;
+  border-right:50px solid transparent;
+  animation-name: boxmove3;
+  animation-delay:1.5s;
+  animation-duration:4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes boxmove{
+  0%{
+    left:100px;
+    background:rgba(90%,95%,100%,0.9);
+  }
+  25%{
+    background:#388;
+  }
+  50%{
+    background:#b11;
+    transform: scale(2.25) rotate(-150deg
+    );
+  }
+  100%{
+    top:500px;
+    left:300px;
+    background:#f95;
+  }
+}
+
+
+@keyframes boxmove2{
+  0%{
+    top:300px;
+    left:200px;
+    background:f65;
+  }
+  25%{
+    background:#f45;
+  }
+  50%{
+    top:50px;
+    background:#FFFF00;
+    transform:scale(0.25) rotate(-350deg
+    );
+  }
+  100%{
+    left:1000px;
+    background:#f86;
+  }
+}
+
+@keyframes boxmove3{
+  0%{
+    top:100px;
+    left:900px;
+    background: transparent;
+    border-bottom:100px solid #DDA0DD	;
+    border-left:50px solid transparent;
+    border-right:50px solid transparent;;
+  }
+  25%{
+    top:150px;
+    background: transparent;
+    border-bottom:100px solid #150;
+    border-left:50px solid transparent;
+    border-right:50px solid transparent;
+  }
+  50%{
+    top:100px;
+    background: transparent;
+    border-bottom:100px solid #169;
+    border-left:50px solid transparent;
+    border-right:50px solid transparent;
+    transform: scale(0.25) rotate(180deg
+    );
+  }
+  100%{
+    left:100px;
+    background: transparent;
+    border-bottom:100px solid #198;
+    border-left:50px solid transparent;
+    border-right:50px solid transparent;
+  }
+
+@keyframes boxmove4{
+  0%{
+    top:300px;
+    left:200px;
+    background:f65;
+  }
+  25%{
+    background:#FFFF00;
+  }
+  50%{
+    top:50px;
+    background:#FFFF00;
+    transform: scale(1.25) rotate(-350deg);
+  }
+  100%{
+    left:1000px;
+    background:#f86;
+  }
+}
